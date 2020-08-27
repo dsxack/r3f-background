@@ -44,6 +44,44 @@ const startPalette2: THREE.Color[] = map([
     return color
 })
 
+const startPalette3: THREE.Color[] = map([
+    "#818181", "#A6A6A6", "#8B8B8B", "#6A6A6A", "#7B7B7B",
+    "#737373", "#8C8C8C", "#A3A3A3", "#B0B0B0", "#ADADAD",
+    "#A0A0A0", "#666666", "#ADADAD", "#9E9E9E", "#848484",
+    "#707070", "#737373", "#9C9C9C", "#6D6D6D", "#6A6A6A",
+    "#7B7B7B", "#828282", "#717171", "#575757", "#5C5C5C",
+    "#797979", "#686868", "#5B5B5B", "#616161", "#676767",
+    "#828282", "#4A4A4A", "#4D4D4D", "#686868", "#595959",
+    "#6B6B6B", "#717171", "#545454", "#343434", "#4F4F4F",
+    "#A7A7A7", "#959595", "#707070", "#5D5D5D", "#858585",
+], (hex: string) => {
+    const color = new THREE.Color(hex)
+    color.r = color.r * 2
+    color.g = color.g * 1.5
+    color.b = color.b * 1.5
+    return color
+})
+
+const sections = [
+    {
+        colors: startPalette1,
+        transitions: {
+            start: [20, 29],
+            end: [30, 40],
+        },
+    },
+    {
+        colors: startPalette2,
+        transitions: {
+            start: [60, 69],
+            end: [70, 80],
+        },
+    },
+    {
+        colors: startPalette3,
+    },
+]
+
 const posY = (i: number, rowSize: number) => Math.floor(i / rowSize)
 const posX = (i: number, rowSize: number) => i % rowSize
 
@@ -56,10 +94,9 @@ const portraitCameraPosition = new THREE.Vector3(4, 5.85, 2)
 
 export const Scene : React.FunctionComponent<SceneProps> = (props) => {
     const { scrollHeight } = props
-    const { colors } = useTiles(
+    const [colors] = useTiles(
         9*5,
-        startPalette1,
-        startPalette2,
+        sections,
         scrollHeight,
     )
     useAspect(

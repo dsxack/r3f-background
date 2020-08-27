@@ -1,5 +1,6 @@
 import * as THREE from "three";
 import {normalizeNumber} from "./normalizenumber";
+import each from "lodash/each";
 
 export type ColorTransitionByTimeParams = {
     startTime: number
@@ -22,16 +23,36 @@ export const transitColorByTime = (
 }
 
 export type ColorTransitionByRangeParams = {
-    fromPercent: number,
-    toPercent: number
+    transitionSteps: number[][]
 }
 export const transitColorByRange = (
-    fromColor: THREE.Color,
-    toColor: THREE.Color,
+    colors: THREE.Color[],
     currentPercent: number,
     params: ColorTransitionByRangeParams,
 ): THREE.Color => {
-    const {toPercent, fromPercent} = params
+    const {transitionSteps} = params
+
+    let toPercent = null;
+    let fromPercent = null;
+    let fromColor = null;
+    let toColor = null;
+
+    // search a color section and transition percents.
+    each(transitionSteps, (step, i) => {
+        if ((step[0] < currentPercent && step[1] > currentPercent) || currentPercent < step[0]) {
+            fromPercent = step[0]
+            toPercent = step[1]
+            fromColor = colors[i]
+            toColor = colors[i + 1]
+            return false
+        }
+    })
+
+    // the last color section.
+    if (toPercent == null || fromPercent == null || fromColor == null || toColor == null) {
+        return colors[colors.length - 1]
+    }
+
     const range = toPercent - fromPercent
 
     return transitColor(
