@@ -24,7 +24,7 @@
     "react-use-dimensions": "^1.2.1",
     "three": "^0.119.1",
     "typescript": "~3.7.2",
-    "zustand": "^3.0.1",
+    "zustand": "^3.2.0",
     "snyk": "^1.437.1"
   },
   "scripts": {
