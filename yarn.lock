@@ -10498,10 +10498,10 @@ postcss@^8.1.0:
     nanoid "^3.1.20"
     source-map "^0.6.1"
 
-postprocessing@^6.16.0:
-  version "6.16.0"
-  resolved "https://registry.yarnpkg.com/postprocessing/-/postprocessing-6.16.0.tgz#9028c3db08805193d8dc9a5d765122d40976edbb"
-  integrity sha512-hw79kzQjSiQhYlHTyRECJMotQ1yRhkzw9tHprxSJF0z/qMx5e9TS4jpAAQOfSbnIr+0vqQG2K0HO23JA/9t3hw==
+postprocessing@^6.18.0:
+  version "6.18.0"
+  resolved "https://registry.yarnpkg.com/postprocessing/-/postprocessing-6.18.0.tgz#4ed25b60e682e159ecb43932822f94dde2768107"
+  integrity sha512-AUmV+465StCApG6QG5J7lSYn1DmtwLDcaIQ7+aoyXsnw3qmhM3u31Xr0qpWrEmLDW52bQ9VntVCdXixHT5BUuA==
 
 prelude-ls@^1.2.1:
   version "1.2.1"
