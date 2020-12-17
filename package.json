@@ -23,7 +23,7 @@
     "react-three-fiber": "^4.2.20",
     "react-use-dimensions": "^1.2.1",
     "three": "^0.119.1",
-    "typescript": "~3.7.2",
+    "typescript": "~3.9.7",
     "zustand": "^3.2.0",
     "snyk": "^1.437.1"
   },
