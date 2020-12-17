@@ -20,7 +20,7 @@
     "react-dom": "^16.13.1",
     "react-postprocessing": "^1.1.6",
     "react-scripts": "4.0.0",
-    "react-three-fiber": "^4.2.20",
+    "react-three-fiber": "^4.2.21",
     "react-use-dimensions": "^1.2.1",
     "three": "^0.119.1",
     "typescript": "~3.7.2",
