@@ -10295,10 +10295,10 @@ postcss@^8.1.0:
     nanoid "^3.1.20"
     source-map "^0.6.1"
 
-postprocessing@^6.19.2:
-  version "6.19.2"
-  resolved "https://registry.yarnpkg.com/postprocessing/-/postprocessing-6.19.2.tgz#7f536bd1133c836d2e43d0fa520acc5cc126d415"
-  integrity sha512-MgaPg8e43XLrPws3vcn4XdED79X7bc8A4i7dm/61vxIVlUeofnCdjplh4fj27zIwZJ2z7oW1a54sEnC2wHTL0w==
+postprocessing@^6.19.3:
+  version "6.19.3"
+  resolved "https://registry.yarnpkg.com/postprocessing/-/postprocessing-6.19.3.tgz#e6a87b7e36aebb14c77fedb1b0dd962f367b95aa"
+  integrity sha512-Ti0/cihCj8SKgUef0zPZIZZT2elwdTCPab+o14nkOZUudeH0tASGFVRtYUHR8iIIvxmB88oQmogp+rM0dfU+eQ==
 
 prelude-ls@^1.2.1:
   version "1.2.1"
