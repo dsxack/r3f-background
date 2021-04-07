@@ -16,7 +16,7 @@
     "drei": "^1.5.7",
     "lodash": "^4.17.21",
     "postprocessing": "^6.21.2",
-    "react": "^16.14.0",
+    "react": "^17.0.2",
     "react-dom": "^16.14.0",
     "react-postprocessing": "^1.3.2",
     "react-scripts": "4.0.3",
