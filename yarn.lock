@@ -15233,7 +15233,7 @@ yocto-queue@^0.1.0:
   resolved "https://registry.yarnpkg.com/yocto-queue/-/yocto-queue-0.1.0.tgz#0294eb3dee05028d31ee1a5fa2c556a6aaf10a1b"
   integrity sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
 
-zustand@^3.0.3, zustand@^3.5.2:
-  version "3.5.2"
-  resolved "https://registry.yarnpkg.com/zustand/-/zustand-3.5.2.tgz#cf162a8bd1d86475bf308bc856c4d02ff13fd53c"
-  integrity sha512-HUCQI9O77/D/zvoWPNv4dwLriiiY2xtEqnQ0TVY8uaPjmOHls04Okd0w3sWUE9Ex2LaYlSk11DbPPIOZ6shEWg==
+zustand@^3.0.3, zustand@^3.5.3:
+  version "3.5.3"
+  resolved "https://registry.yarnpkg.com/zustand/-/zustand-3.5.3.tgz#b015345d3a97b0e3f33b7c4926c6a04cea68cd84"
+  integrity sha512-0MuE3YgrgpBJ2mRWNmaHNUmVG5lEbkzJRUzLXNvyA5W989EElJoUZY8esvHBdyWxEeszustys68ftfaMnzFDwA==
