@@ -13980,10 +13980,10 @@ then-fs@^2.0.0:
   dependencies:
     promise ">=3.2 <8"
 
-three@^0.119.1:
-  version "0.119.1"
-  resolved "https://registry.yarnpkg.com/three/-/three-0.119.1.tgz#9d979a082c4cd9622af8e3498a8dfa026a619332"
-  integrity sha512-GHyh/RiUfQ5VTiWIVRRTANYoXc1PFB1y+jDVRTb649nif1uX1F06PT1TKU3k2+F/MN4UJ3PWvQB53fY2OqKqKw==
+three@^0.129.0:
+  version "0.129.0"
+  resolved "https://registry.yarnpkg.com/three/-/three-0.129.0.tgz#f5e530bbc96eac5d5b4749cb5da886ef0d42f554"
+  integrity sha512-wiWio1yVRg2Oj6WEWsTHQo5eSzYpEwSBtPSi3OofNpvFbf26HFfb9kw4FZJNjII4qxzp0b1xLB11+tKkBGB1ZA==
 
 throat@^5.0.0:
   version "5.0.0"
